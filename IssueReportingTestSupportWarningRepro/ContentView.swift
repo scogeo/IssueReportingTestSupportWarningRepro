@@ -5,6 +5,7 @@
 //  Created by George Scott on 11/5/26.
 //
 
+import AppFeature
 import SwiftUI
 
 struct ContentView: View {
@@ -13,7 +14,7 @@ struct ContentView: View {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text(AppFeature.makeID().uuidString)
         }
         .padding()
     }

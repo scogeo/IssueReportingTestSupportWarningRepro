@@ -10,8 +10,17 @@
       "Base",
     ],
   },
+  "packages": [
+    {
+      "kind": "local",
+      "path": "repro-package",
+    },
+  ],
   "files": [
+    { "path": "README.md" },
+    { "path": "repro-package" },
     { "kind": "folder", "path": "IssueReportingTestSupportWarningRepro", "target-membership": [ "IssueReportingTestSupportWarningRepro" ] },
+    { "kind": "group", "name": "Frameworks" },
     {
       "kind": "group",
       "name": "Products",
@@ -30,6 +39,12 @@
         "compile-sources",
         "frameworks",
         "resources",
+      ],
+      "package-product-members": [
+        {
+          "product-name": "AppFeature",
+          "build-phase": { "build-phase": "frameworks" },
+        },
       ],
       "build-settings": {
         "ASSETCATALOG_COMPILER_APPICON_NAME": "AppIcon",
